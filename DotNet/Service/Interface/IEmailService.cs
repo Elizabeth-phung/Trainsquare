@@ -13,14 +13,6 @@ namespace Sabio.Services
 {
     public interface IEmailService
     {
-        Task SendEmail(SendGridMessage msg);
-        Task SendTest(EmailAddRequest emailModel);
-        Task SendRegistrationConfirmation(string email, string token);
-        Task<bool> ContactUs(ContactUsAddRequest model);        
-        Task SendPasswordResetEmail(string email, string token);
-        Task SendZoomLink(EmailsAddRequest emailsModel);
-        Task SubscribeToNewsletter(string email);
         Task SendPdf(IFormFile pdf, IFormFile requestModel);
-
     }
 }
