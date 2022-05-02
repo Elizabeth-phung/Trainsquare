@@ -1,0 +1,7 @@
+.pdf-container {
+        height: 75rem;
+        width: 100%;
+        background-clip: border-box;
+        border: none;
+        border-radius: 0.25rem;
+}

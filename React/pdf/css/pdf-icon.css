@@ -1,0 +1,14 @@
+.icon-large{
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.icon-med{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.icon-sm{
+    font-size: 1rem;
+    cursor: pointer;
+}
