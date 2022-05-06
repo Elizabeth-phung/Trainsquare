@@ -102,12 +102,12 @@ function Sessions() {
 
     const refreshTable = useCallback(() => {
         setRefresh(refresh + 1);
-    });
+    },[]);
 
     const onDelete = useCallback((session) => {
         const deleteHandler = onDeleteSuccess(session.id);
         sessionFunctions.remove(session.id).then(deleteHandler).catch(onDeleteError);
-    });
+    },[]);
 
     const onDeleteSuccess = (id) => {
         return () => {
@@ -153,14 +153,14 @@ function Sessions() {
             };
             return temp;
         });
-    });
+    },[]);
 
-    const timeSpanToLocaleTime = (time) => {
+    const timeSpanToLocaleTime = useCallback((time) => {
         //converts military time to standard
         let temp = new Date();
         temp.setHours(time.slice(0, 2), time.slice(3, 5), time.slice(6));
         return temp.toLocaleTimeString();
-    };
+    },[]);
 
     return (
         <React.Fragment>
