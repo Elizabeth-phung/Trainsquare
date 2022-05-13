@@ -1,19 +1,3 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using Sabio.Models.Domain;
-using Sabio.Models.Requests;
-using Sabio.Models.Requests.ContactUs;
-using Sabio.Models.Requests.Email;
-using Sabio.Services;
-using Sabio.Web.Models.Responses;
-using SendGrid;
-using SendGrid.Helpers.Mail;
-using System;
-using System.Threading.Tasks;
-
-namespace Sabio.Web.Api.Controllers
 {
 
     [Route("api/emails")]
