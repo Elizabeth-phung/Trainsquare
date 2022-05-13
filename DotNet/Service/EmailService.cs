@@ -1,31 +1,3 @@
-﻿using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using Newtonsoft.Json;
-using Sabio.Data.Providers;
-using Sabio.Models.AppSettings;
-using Sabio.Models.Requests;
-using Sabio.Models.Requests.ContactUs;
-using Sabio.Models.Requests.Email;
-using Sabio.Models.Requests.NewsletterSubscriptions;
-using SendGrid;
-using SendGrid.Helpers.Mail;
-using SendGrid.Helpers.Mail.Model;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.SqlClient;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Text.Encodings.Web;
-using System.Threading.Tasks;
-
-
-
-namespace Sabio.Services
 {
     public class EmailService : IEmailService
     {
