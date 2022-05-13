@@ -1,18 +1,3 @@
-﻿using Sabio.Data;
-using Sabio.Data.Providers;
-using Sabio.Models;
-using Sabio.Models.Domain;
-using Sabio.Models.Requests.Workshop;
-using Sabio.Services.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Sabio.Services
 {
     public class WorkShopService : IWorkShopService
     {
