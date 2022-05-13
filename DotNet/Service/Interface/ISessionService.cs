@@ -1,9 +1,3 @@
-﻿using Sabio.Models;
-using Sabio.Models.Domain;
-using Sabio.Models.Requests.Sessions;
-using System.Collections.Generic;
-
-namespace Sabio.Services
 {
     public interface ISessionService
     {
